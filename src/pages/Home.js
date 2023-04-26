@@ -21,11 +21,13 @@ export default function () {
           <thead>
             <tr>
               <th scope="col">#</th>
-              <th scope="col">First</th>
-              <th scope="col">Last</th>
-              <th scope="col">Handle</th>
-              <th scope="col">Last</th>
-              <th scope="col">Handle</th>
+              <th scope="col">User name</th>
+              <th scope="col">Shop Name</th>
+              <th scope="col">Email id.</th>
+              <th scope="col">Rank</th>
+              <th scope="col">Phone no.</th>
+              <th scope="col">Address</th>
+              <th scope="col">Actions</th>
             </tr>
           </thead>
           <tbody>
@@ -40,6 +42,11 @@ export default function () {
                 <td>{user.rank}</td>
                 <td>{user.phoneNo}</td>
                 <td>{user.address}</td>
+                <td>
+                  <button className="btn btn-primary mx-2">View</button>
+                  <button className="btn btn-outline-primary mx-2">Edit</button>
+                  <button className="btn btn-danger mx-2">Delete</button>
+                </td>
               </tr>
             ))}
           </tbody>
